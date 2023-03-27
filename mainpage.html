@@ -10,6 +10,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/35fcdc901c.js" crossorigin="anonymous"></script>
   <title>Document</title>
   <style>
     .nav-link {
@@ -42,16 +43,19 @@
         text-align: center;
         /* Center the button text */
       }
-      .card, .card1 {
-    bottom: unset;
-    left: unset;
-    margin-top: 20px;
-    /* Reset the position properties and add margin-top to separate cards */
-  }
-      
+
+      .card,
+      .card1 {
+        bottom: unset;
+        left: unset;
+        margin-top: 20px;
+        /* Reset the position properties and add margin-top to separate cards */
+      }
+
     }
+
     @media (max-width: 480px) {
-    
+
       .btn {
         margin-left: 0;
         /* Reset the margin for smaller screens */
@@ -64,20 +68,27 @@
         text-align: center;
         /* Center the button text */
       }
-      .card, .card1 {
-    bottom: unset;
-    bottom:10px;
-    left: 0px;
-    size: 5px;
-    margin-top: 20px;
-    /* Reset the position properties and add margin-top to separate cards */
-  }
+
+      .card,
+      .card1 {
+        bottom: unset;
+        bottom: 10px;
+        left: 0px;
+        size: 5px;
+        margin-top: 20px;
+        /* Reset the position properties and add margin-top to separate cards */
+      }
 
     }
 
 
     body {
       /* overflow-x: hidden;*/
+      height: none;
+      overflow-x: hidden;
+      height: 10px;
+
+
     }
 
     .carousel-item {
@@ -114,7 +125,8 @@
       color: black;
       background-color: aliceblue;
     }
-    .card1{
+
+    .card1 {
       position: relative;
       bottom: 700px;
       color: aliceblue;
@@ -123,43 +135,79 @@
       box-shadow: 1px 2px 10px 3px black;
       border-radius: 5px;
     }
-    .btn2{
+
+    .btn2 {
       border: 2px white solid;
       text-decoration: none;
       border-radius: 5px;
       background-color: #343a40;
       color: aliceblue;
-      outline:white;
+      outline: white;
 
     }
-    .btn2:hover{
+
+    .btn2:hover {
       color: black;
       background-color: aliceblue;
     }
+
     .card1:hover {
       box-shadow: 1px 2px 10px 3px white;
     }
-    #mainheading{
-      
-    position: relative;
+
+    #mainheading {
+
+      position: relative;
       bottom: 1350px;
-   right:100px;
-      
+      right: 100px;
+
       text-align: center;
-      font-family:Georgia, 'Times New Roman', Times, serif;
-      color:aliceblue;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: aliceblue;
       height: 900px;
-      text-shadow:  2px 4px 16px 6px red;
-      font-weight:bolder;
+      text-shadow: 2px 4px 16px 6px red;
+      font-weight: bolder;
       text-shadow: 4px 5px black;
-      
+
     }
-    h1{
+
+    h1 {
       font-size: 70px;
-     
+
     }
-    #hash{
+
+    #hash {
       color: #FF0303;
+    }
+
+    #carouselExampleSlidesOnly {
+      z-index: -1;
+    }
+
+    form {
+      z-index: 2;
+      position: absolute;
+      top: 300px;
+      border: #343a40 2px solid;
+      width: 1200px;
+      left: 78px;
+      border-radius: 10px;
+      box-shadow: black 3px 2px 3px 1px;
+    }
+
+    #lockbtn {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      margin-left: 555px;
+      margin-bottom: 7px;
+
+    }
+    #lockbtn:hover{
+      background-color: goldenrod;
+    }
+    #bc{
+      margin-top:0px ;
     }
   </style>
 </head>
@@ -202,17 +250,49 @@
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="asset/jason-dent-JFk0dVyvdvw-unsplash.jpg" class="d-block w-100" alt="...">
+        <img src="asset/jason-dent-JFk0dVyvdvw-unsplash.jpg" class="d-block w-100" alt="..."
+          style="position: relative;">
       </div>
 
     </div>
   </div>
+  <form class="row row-cols-lg-auto g-3 align-items-center ">
+    <div class="col-12">
+      <label class="visually-hidden" for="inlineFormInputGroupUsername">Website name</label>
+      <div class="input-group">
+        <div class="input-group-text">.com</div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Website">
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label class="visually-hidden" for="inlineFormInputGroupUsername">Password</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="password">
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+          <label class="form-check-label" for="inlineFormCheck">
+            Remember me
+          </label>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button id="lockbtn"><img src="asset/lock.png" height="36px" width="35px"></button>
+
+      </div>
+  </form>
+  </div>
 
 
+<div>
+  <img src="asset/2939771.jpg" id="bc">
+</div>
 
-
-
-  <div class="card bg-dark" style="width: 18rem;">
+  <!--<div class="card bg-dark" style="width: 18rem; ">
     <img src="asset/password_protection_image.webp" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Professional Edition</h5>
@@ -234,7 +314,8 @@
                            Security Platform</h1></pre>
   <div class="part2">
     <img src="">
-  </div>
+  </div>-->
+
 
 </body>
 
