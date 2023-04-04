@@ -70,26 +70,12 @@
       }
 
       .card,
-      .card1 {
-        bottom: unset;
-        bottom: 10px;
-        left: 0px;
-        size: 5px;
-        margin-top: 20px;
-        /* Reset the position properties and add margin-top to separate cards */
-      }
+      .card1 {}
 
     }
 
 
-    body {
-      /* overflow-x: hidden;*/
-      height: none;
-      overflow-x: hidden;
-      height: 10px;
-
-
-    }
+    
 
     .carousel-item {
       z-index: -1;
@@ -158,13 +144,13 @@
     #mainheading {
 
       position: relative;
-      bottom: 1350px;
-      right: 100px;
+      bottom: 2110px;
+      right: 20px;
 
       text-align: center;
       font-family: Georgia, 'Times New Roman', Times, serif;
       color: aliceblue;
-      height: 900px;
+     /* height: 900px;*/
       text-shadow: 2px 4px 16px 6px red;
       font-weight: bolder;
       text-shadow: 4px 5px black;
@@ -203,16 +189,37 @@
       margin-bottom: 7px;
 
     }
-    #lockbtn:hover{
+
+    #lockbtn:hover {
       background-color: goldenrod;
     }
-    #bc{
-      margin-top:0px ;
+
+    #bc {
+      margin-top: 0px;
     }
+    .footer1{
+      position: relative;
+      bottom: 796px;
+      
+    
+    }
+    body {
+    
+    
+    overflow-x: hidden;
+    height: 100px;
+
+  
+
+
+  }
+
+    
   </style>
 </head>
 
 <body>
+  <script src="mainvalidation.js"></script>
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -254,21 +261,22 @@
           style="position: relative;">
       </div>
 
+
     </div>
   </div>
-  <form class="row row-cols-lg-auto g-3 align-items-center ">
+  <form class="row row-cols-lg-auto g-3 align-items-center " onsubmit="validate(event)">
     <div class="col-12">
-      <label class="visually-hidden" for="inlineFormInputGroupUsername">Website name</label>
+      <label class="visually-hidden" for="inlineFormInputGroupUsername" >Website name</label>
       <div class="input-group">
         <div class="input-group-text">.com</div>
-        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Website">
+        <input type="text" class="form-control" id="wname" placeholder="Website">
       </div>
     </div>
 
     <div class="col-12">
-      <label class="visually-hidden" for="inlineFormInputGroupUsername">Password</label>
+      <label class="visually-hidden" for="inlineFormInputGroupUsername" >Password</label>
       <div class="input-group">
-        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="password">
+        <input type="text" class="form-control" id="pass" placeholder="password">
       </div>
 
       <div class="col-12">
@@ -281,18 +289,17 @@
       </div>
 
       <div class="col-12">
-        <button id="lockbtn"><img src="asset/lock.png" height="36px" width="35px"></button>
+        <button type="submit" id="lockbtn" ><img src="asset/lock.png" height="36px" width="35px"></button>
 
       </div>
   </form>
   </div>
 
 
-<div>
-  <img src="asset/2939771.jpg" id="bc">
-</div>
-
-  <!--<div class="card bg-dark" style="width: 18rem; ">
+  <div>
+    <img src="asset/2939771.jpg" id="bc" width="1350px">
+  </div>
+  <div class="card bg-dark" style="width: 18rem; ">
     <img src="asset/password_protection_image.webp" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Professional Edition</h5>
@@ -306,15 +313,57 @@
     <img src="asset/pro edition1.jpg" class="card-img-top" alt="..." width="286px" height="169px">
     <div class="card-body">
       <h5 class="card-title">Enterprise Edition</h5>
-      <p class="card-text"><pre>additional security provided</pre></p>
+      <p class="card-text">
+      <pre>additional security provided</pre>
+      </p>
       <a href="#" class="btn2 ">Buy $100</a>
     </div>
   </div>
-  <pre id="mainheading" ><h1>The <span id="hash">#</span>1 password
-                           Security Platform</h1></pre>
-  <div class="part2">
-    <img src="">
-  </div>-->
+  <pre id="mainheading"><h1>The <span id="hash">#</span>1 password
+  Security Platform</h1></pre>
+
+<div class="footer1">
+ <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    
+    <div class="container pt-4">
+     
+      <section class="mb-4">
+       
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+    
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+       
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+     
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+      
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+      </section>
+  
+    </div>
+   
+
+  
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="">Secureplus.com</a>
+    </div>
+   
+  </footer>
+  </div>
+
+
+
 
 
 </body>

@@ -34,6 +34,7 @@ function validation(event){
     }
     else{
         alert('thanks for your registeration');
+        window.location="http://127.0.0.1:5500/mainpage.html";
     }
 
 
